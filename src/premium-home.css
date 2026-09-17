@@ -810,14 +810,21 @@
   color: #8e7d9e;
   font-size: 9px;
 }
+.suite-product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 19px;
+  border-top: 1px solid #ede6f4;
+}
 .suite-product-cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-top: auto;
-  padding-top: 19px;
-  border-top: 1px solid #ede6f4;
   font-size: 11px;
   font-weight: 500;
 }

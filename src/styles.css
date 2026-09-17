@@ -104,6 +104,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ring); outline-
 .hero-copy h1 > span { color: var(--primary); }
 .hero-copy > p { max-width: 450px; margin: 24px 0 0; color: var(--muted-foreground); font-size: 16px; line-height: 1.85; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 26px; margin-top: 30px; }
+.crm-launch-link, .catalog-copy .crm-launch-link { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 10px 15px; border: 1px solid #7151c7; border-radius: 7px; background: linear-gradient(120deg, #8060de, #6746c4); color: #fff; font: 500 11px var(--font-sans); white-space: nowrap; box-shadow: inset 0 1px 0 #ffffff30, 0 3px 8px #7654cb20; }
+.crm-launch-link:hover { background: #6746c4; }
+.crm-launch-link svg { width: 14px; height: 14px; }
+.catalog-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 15px; margin-top: 22px; }
+.catalog-copy .catalog-actions a { margin-top: 0; }
 .hero-actions > a:first-child { min-height: 48px; padding-inline: 22px; border-radius: 2px; border-bottom: 2px solid #c9a15c; box-shadow: 0 6px 15px #29223f10; }
 .hero-secondary { display: inline-flex; align-items: center; gap: 12px; font-size: 13px; }
 .hero-secondary svg { width: 15px; transition: transform .2s ease; }

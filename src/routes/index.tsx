@@ -20,6 +20,7 @@ import {
   Workflow,
 } from "lucide-react";
 import { AppShell } from "@/components/aureleen/site-shell";
+import { CrmLaunchLink } from "@/components/aureleen/crm-launch-link";
 import { products } from "@/data/products";
 
 export const Route = createFileRoute("/")({
@@ -336,16 +337,19 @@ function HomePage() {
                       <span key={module}>{module}</span>
                     ))}
                   </div>
-                  <Link
-                    to="/products/$slug"
-                    params={{ slug: product.slug }}
-                    className="suite-product-cta"
-                  >
-                    Explore the system{" "}
-                    <span>
-                      <ArrowUpRight />
-                    </span>
-                  </Link>
+                  <div className="suite-product-actions">
+                    <Link
+                      to="/products/$slug"
+                      params={{ slug: product.slug }}
+                      className="suite-product-cta"
+                    >
+                      Explore the system{" "}
+                      <span>
+                        <ArrowUpRight />
+                      </span>
+                    </Link>
+                    <CrmLaunchLink product={product} />
+                  </div>
                 </article>
               );
             })}
